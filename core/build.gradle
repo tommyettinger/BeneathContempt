@@ -23,8 +23,9 @@ dependencies {
   api "com.squidpony:squidstorepath:$squidStorePathVersion"
   api "com.squidpony:squidstoretext:$squidStoreTextVersion"
   api "com.squidpony:squidtext:$squidTextVersion"
-  // I don't care about proliferating this dep from here.
-  api "org.jetbrains:annotations:$jbAnnotations"
+  compileOnly "org.jetbrains:annotations:26.0.2-1"
+// optional:
+  testCompileOnly "org.jetbrains:annotations:26.0.2-1"
 
   if(enableGraalNative == 'true') {
     implementation "io.github.berstanio:gdx-svmhelper-annotations:$graalHelperVersion"

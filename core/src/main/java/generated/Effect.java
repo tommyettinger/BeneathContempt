@@ -28,7 +28,9 @@ import com.github.tommyettinger.ds.support.util.PartialParser;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+import org.jetbrains.annotations.NotNullByDefault;
 
+@NotNullByDefault
 public class Effect {
   public static final String[] __headerLine;
 
@@ -37,7 +39,7 @@ public class Effect {
   static {
     __headerLine = new String[]{"name:s^", "operation:s", "valueMul:i", "valueAdd:j{, }i", "type:s", "listensFor:j", "succRemove:s[, ]", "succPut:s[, ]", "removedBy:j", "description:s"};
     __defaults = new String[__headerLine.length];
-      Arrays.fill(__defaults, "");
+    Arrays.fill(__defaults, "");
   }
 
   public String name;
@@ -63,7 +65,7 @@ public class Effect {
   public long __code;
 
   public Effect() {
-      this(__defaults);
+    this(__defaults);
   }
 
   public Effect(String name, String operation, int valueMul,

@@ -164,4 +164,6 @@ Thumbs.db
 **/resource-config.json
 
 taboratory.exe
+!/data/taboratory.exe
+
 /assets/data/generated/
