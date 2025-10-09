@@ -1,0 +1,16 @@
+name:s^	rank:i	efficiency:i	power:i	type:s	status:s	statusGrade:i	before:b	affects:s	recipient:s	action:s	amount	condition:s	description:s
+Bending	1	0	-3				t	defense	user	set	0	negative	Before: Remove any Defense penalty you have.
+Flowing	2	2	-2				t	defense	user	set	0	negative	Before: Remove any Defense penalty you have.
+Acrobatic	3	4	-1				t	defense	user	set	0	negative	Before: Remove any Defense penalty you have.
+Deceitful	1	2	-4				F	defense	target	times	2	negative	After: If the target has a Defense penalty, double that penalty.
+Nefarious	2	4	-3				F	defense	target	times	2	negative	After: If the target has a Defense penalty, double that penalty.
+Dastardly	3	6	-2				F	defense	target	times	2	negative	After: If the target has a Defense penalty, double that penalty.
+Cautious	1	-2	0				F	defense	user	plus	1		After: Gain 1 Defense bonus.
+Guarded	2	-1	0				F	defense	user	plus	2		After: Gain 2 Defense bonus.
+Vigilant	3	0	0				F	defense	user	plus	3		After: Gain 3 Defense bonus.
+Angry	1	-4	2				F	offense	user	plus	1		After: Gain 1 Offense bonus.
+Furious	2	-4	3				F	offense	user	plus	2		After: Gain 2 Offense bonus.
+Livid	3	-4	4				F	offense	user	plus	3		After: Gain 3 Offense bonus.
+Gripping	1	-1	-3	grabbing	immobilize	2	t	any	target	set	0		Before: Remove any bonuses or penalties your target has.
+Wrestling	2	0	-2	grabbing	immobilize	3	t	any	target	set	0		Before: Remove any bonuses or penalties your target has.
+Grappling	3	1	-1	grabbing	immobilize	4	t	any	target	set	0		Before: Remove any bonuses or penalties your target has.
