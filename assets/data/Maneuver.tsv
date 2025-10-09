@@ -23,3 +23,18 @@ Smashing	3	-2	2	crushing			F	offense	target	plus	-3		After: The target takes 3 O
 Leading	1	-2	-2				F	offense	allies	plus	1		After: All other allies gain 1 Offense bonus.
 Inspiring	2	-1	0				F	offense	allies	plus	1		After: All other allies gain 1 Offense bonus.
 Commanding	3	0	2				F	offense	allies	plus	1		After: All other allies gain 1 Offense bonus.
+Protective	1	-3	-1				F	defense	allies	plus	1		After: All other allies gain 1 Defense bonus.
+Shielding	2	-2	1				F	defense	allies	plus	1		After: All other allies gain 1 Defense bonus.
+Fortifying	3	-1	3				F	defense	allies	plus	1		After: All other allies gain 1 Defense bonus.
+Reckless	1	0	2	thrashing			F	defense	self	plus	-1		After: Take 1 Defense penalty.
+Risky	2	0	5	thrashing			F	defense	self	plus	-1		After: Take 1 Defense penalty.
+Perilous	3	0	8	thrashing			F	defense	self	plus	-1		After: Take 1 Defense penalty.
+Taxing	1	1	1				F	offense	self	plus	-1		After: Take 1 Offense penalty.
+Strenuous	2	2	3				F	offense	self	plus	-1		After: Take 1 Offense penalty.
+Exhausting	3	3	5				F	offense	self	plus	-1		After: Take 1 Offense penalty.
+Calm	1	-1	-2				t	offense	self	set	0	negative	Before: Remove any Offense penalty you have.
+Tranquil	2	1	-1				t	offense	self	set	0	negative	Before: Remove any Offense penalty you have.
+Serene	3	3	0				t	offense	self	set	0	negative	Before: Remove any Offense penalty you have.
+Fierce	1	-4	-1	ripping			t	offense	self	times	-1	negative	Before: If you have an Offense penalty, flip it to a bonus.
+Brutal	2	-3	1	ripping			t	offense	self	times	-1	negative	Before: If you have an Offense penalty, flip it to a bonus.
+Savage	3	-2	3	ripping			t	offense	self	times	-1	negative	Before: If you have an Offense penalty, flip it to a bonus.
