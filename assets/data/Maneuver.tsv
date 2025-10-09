@@ -38,3 +38,18 @@ Serene	3	3	0				t	offense	self	set	0	negative	Before: Remove any Offense penalty
 Fierce	1	-4	-1	ripping			t	offense	self	times	-1	negative	Before: If you have an Offense penalty, flip it to a bonus.
 Brutal	2	-3	1	ripping			t	offense	self	times	-1	negative	Before: If you have an Offense penalty, flip it to a bonus.
 Savage	3	-2	3	ripping			t	offense	self	times	-1	negative	Before: If you have an Offense penalty, flip it to a bonus.
+Steadfast	1	-3	-2				t	defense	self	times	-1	negative	Before: If you have a Defense penalty, flip it to a bonus.
+Stalwart	2	-2	0				t	defense	self	times	-1	negative	Before: If you have a Defense penalty, flip it to a bonus.
+Resolute	3	-1	2				t	defense	self	times	-1	negative	Before: If you have a Defense penalty, flip it to a bonus.
+Insulting	1	0	-3				t	offense	target	set	0	positive	Before: Remove any Offense bonus your target has.
+Mocking	2	2	-2				t	offense	target	set	0	positive	Before: Remove any Offense bonus your target has.
+Shaming	3	4	-1				t	offense	target	set	0	positive	Before: Remove any Offense bonus your target has.
+Poking	1	-2	-2	piercing	immobilize	1	t	defense	target	set	0	positive	Before: Remove any Defense bonus your target has.
+Skewering	2	-1	-1	piercing	immobilize	2	t	defense	target	set	0	positive	Before: Remove any Defense bonus your target has.
+Impaling	3	0	0	piercing	immobilize	3	t	defense	target	set	0	positive	Before: Remove any Defense bonus your target has.
+Chopping	1	-5	0	hacking			t	defense	target	times	-1	positive	Before: If your target has a Defense bonus, flip it to a penalty.
+Hewing	2	-5	3	hacking			t	defense	target	times	-1	positive	Before: If your target has a Defense bonus, flip it to a penalty.
+Severing	3	-5	6	hacking			t	defense	target	times	-1	positive	Before: If your target has a Defense bonus, flip it to a penalty.
+Dueling	1	-2	-3	slicing			t	offense	target	times	-1	positive	Before: If your target has an Offense bonus, flip it to a penalty.
+Artful	2	0	-2	slicing			t	offense	target	times	-1	positive	Before: If your target has an Offense bonus, flip it to a penalty.
+Elegant	3	2	-1	slicing			t	offense	target	times	-1	positive	Before: If your target has an Offense bonus, flip it to a penalty.
