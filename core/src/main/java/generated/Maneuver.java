@@ -103,7 +103,7 @@ public class Maneuver {
     this.type = fields[4];
     this.status = fields[5];
     this.statusGrade = Base.BASE10.readInt(fields[6]);
-    this.before = fields[7].length() != 0 && fields[7].charAt(0) == 't';
+    this.before = !fields[7].isEmpty() && fields[7].charAt(0) == 't';
     this.affects = fields[8];
     this.recipient = fields[9];
     this.action = fields[10];
