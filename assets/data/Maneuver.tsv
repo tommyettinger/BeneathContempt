@@ -53,3 +53,18 @@ Severing	3	-5	6	hacking			t	defense	target	times	-1	positive	Before: If your tar
 Dueling	1	-2	-3	slicing			t	offense	target	times	-1	positive	Before: If your target has an Offense bonus, flip it to a penalty.
 Artful	2	0	-2	slicing			t	offense	target	times	-1	positive	Before: If your target has an Offense bonus, flip it to a penalty.
 Elegant	3	2	-1	slicing			t	offense	target	times	-1	positive	Before: If your target has an Offense bonus, flip it to a penalty.
+Curious	1	-1	1	zapping	doom	2	F	defense	self	times	2	negative	After: If you have a Defense penalty, double that penalty.
+Mysterious	2	-1	3	zapping	doom	3	F	defense	self	times	2	negative	After: If you have a Defense penalty, double that penalty.
+Cosmic	3	-1	5	zapping	doom	4	F	defense	self	times	2	negative	After: If you have a Defense penalty, double that penalty.
+Hardening	1	0	-2	morphing	immobilize	4	F	defense	target	plus	1		After: The target gains 1 Defense bonus.
+Solidifying	2	1	-1	morphing	immobilize	5	F	defense	target	plus	1		After: The target gains 1 Defense bonus.
+Petrifying	3	2	0	morphing	immobilize	6	F	defense	target	plus	1		After: The target gains 1 Defense bonus.
+Trembling	1	-3	1	quaking	floored	2	t	offense	every	plus	-1		Before: All characters take 1 Offense penalty.
+Rumbling	2	-3	3	quaking	floored	3	t	offense	every	plus	-1		Before: All characters take 1 Offense penalty.
+Burying	3	-3	5	quaking	floored	4	t	offense	every	plus	-1		Before: All characters take 1 Offense penalty.
+Splashing	1	1	-3	soaking	unhand	2	t	defense	every	plus	-1		Before: All characters take 1 Defense penalty.
+Torrential	2	2	-2	soaking	unhand	3	t	defense	every	plus	-1		Before: All characters take 1 Defense penalty.
+Flooding	3	3	-1	soaking	unhand	4	t	defense	every	plus	-1		Before: All characters take 1 Defense penalty.
+Cruel	1	-2	2	hexing	doom	4	t	defense	allies	plus	-1		Before: All allies take 1 Defense penalty.
+Wicked	2	-2	3	hexing	doom	6	t	defense	allies	plus	-1		Before: All allies take 1 Defense penalty.
+Diabolical	3	-2	4	hexing	doom	8	t	defense	allies	plus	-1		Before: All allies take 1 Defense penalty.
