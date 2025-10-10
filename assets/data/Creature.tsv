@@ -1,0 +1,2 @@
+name:s^	graphic:s	toughness:i	agility:i	persona:i	expertise:i	maneuvers:s[, ]	close:s	closeEffects:s[, ]	far:s	farEffects:s[, ]	description:s
+Adamos	arch priest	2	1	4	3	Bright, Commanding, Cosmic, Protective, Guarded, Brilliant	staff	slam, punish, parry, feint, slam, trip, punish, wither	beam	punish, shock, precision, punish, wither, precision, punish, shock	A holy man who isn't quite sure why people think he's holy.
