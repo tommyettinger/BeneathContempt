@@ -77,9 +77,12 @@ Frigid	3	5	-1	freezing	immobilize	6	t	offense	allies	plus	-1		Before: All allies
 Searing	1	-1	1	burning	breach	2	F	offense	target	plus	1		After: The target gains 1 Offense bonus.
 Scorching	2	-1	3	burning	breach	3	F	offense	target	plus	1		After: The target gains 1 Offense bonus.
 Incinerating	3	-1	5	burning	breach	4	F	offense	target	plus	1		After: The target gains 1 Offense bonus.
-Disorienting	1	-3	-3	stunning	stun	4	F	offense	target	times	2	negative	After: If the target has an Offense penalty, double that penalty.
-Dazing	2	-2	-2	stunning	stun	5	F	offense	target	times	2	negative	After: If the target has an Offense penalty, double that penalty.
-Knockout	3	-1	-1	stunning	stun	6	F	offense	target	times	2	negative	After: If the target has an Offense penalty, double that penalty.
+Disorienting	1	-3	-3	vexing	stun	4	F	offense	target	times	2	negative	After: If the target has an Offense penalty, double that penalty.
+Dazing	2	-2	-2	vexing	stun	5	F	offense	target	times	2	negative	After: If the target has an Offense penalty, double that penalty.
+Knockout	3	-1	-1	vexing	stun	6	F	offense	target	times	2	negative	After: If the target has an Offense penalty, double that penalty.
 Bright	1	3	-4	shining	blind	3	F	offense	self	times	2	negative	After: If you have an Offense penalty, double that penalty.
 Radiant	2	4	-4	shining	blind	5	F	offense	self	times	2	negative	After: If you have an Offense penalty, double that penalty.
 Brilliant	3	5	-4	shining	blind	7	F	offense	self	times	2	negative	After: If you have an Offense penalty, double that penalty.
+Rowdy	1	-3	3	roaring	stun	2	F	offense	target	times	2	positive	After: If the target has an Offense bonus, double that bonus.
+Raucous	2	-3	4	roaring	stun	4	F	offense	target	times	2	positive	After: If the target has an Offense bonus, double that bonus.
+Riotous	3	-3	5	roaring	stun	6	F	offense	target	times	2	positive	After: If the target has an Offense bonus, double that bonus.
