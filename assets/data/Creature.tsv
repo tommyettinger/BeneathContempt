@@ -1,2 +1,3 @@
-name:s^	graphic:s	toughness:i	agility:i	persona:i	expertise:i	maneuvers:s[, ]	close:s	closeEffects:s[, ]	far:s	farEffects:s[, ]	description:s
-Adamos	arch priest	2	1	4	3	Bright, Commanding, Cosmic, Protective, Guarded, Brilliant	staff	slam, punish, parry, feint, slam, trip, punish, wither	beam	punish, shock, precision, punish, wither, precision, punish, shock	A holy man who isn't quite sure why people think he's holy.
+name:s^	graphic:s	toughness:i	agility:i	persona:i	expertise:i	maneuvers:s[, ]	close:s	closeGraphic:s	closeEffects:s[, ]	far:s	farGraphic:s	farEffects:s[, ]	description:s
+Adamos	arch priest	2	1	4	3	Bright, Commanding, Cosmic, Protective, Guarded, Brilliant	Mace	mace	slam, punish, parry, feint, slam, trip, punish, wither	Beam	light tome	punish, shock, precision, punish, wither, precision, punish, shock	A holy man who isn't quite sure why people think he's holy.
+Xanaquiel	elf	1	4	2	3	Searing, Frosty, Elegant, Calm, Flowing, Exhausting	Blade	runesword	slash, burn, shock, precision, freeze, acid, parry, precision	Blast	amethyst pendant	burn, deflect, burn, penetrate, burn, shock, burn, deflect	A jaded elf sorceress with many tricks up her sleeve.
