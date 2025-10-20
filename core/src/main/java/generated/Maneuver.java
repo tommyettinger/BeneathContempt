@@ -27,9 +27,7 @@ import com.github.tommyettinger.ds.support.util.PartialParser;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
-import org.jetbrains.annotations.NotNullByDefault;
 
-@NotNullByDefault
 public class Maneuver {
   public static final String[] __headerLine;
 

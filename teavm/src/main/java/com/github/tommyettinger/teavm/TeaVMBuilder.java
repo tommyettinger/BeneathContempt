@@ -35,7 +35,9 @@ public class TeaVMBuilder {
         // Register any classes or packages that require reflection here:
         // TeaReflectionSupplier.addReflectionClass("com.github.tommyettinger.reflect");
 
-        TeaVMTool tool = TeaBuilder.config(teaBuildConfiguration);
+        TeaBuilder.config(teaBuildConfiguration);
+
+        TeaVMTool tool = new TeaVMTool();
 
         // JavaScript is the default target type for TeaVM, and it works better during debugging.
         tool.setTargetType(TeaVMTargetType.JAVASCRIPT);

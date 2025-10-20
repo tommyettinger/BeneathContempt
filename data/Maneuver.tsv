@@ -1,0 +1,88 @@
+name:s^	rank:i	efficiency:i	power:i	type:s	status:s	statusGrade:i	before:b	affects:s	recipient:s	action:s	amount	condition:s	description:s
+Bending	1	0	-3				t	defense	self	set	0	negative	Before: Remove any Defense penalty you have.
+Flowing	2	2	-2				t	defense	self	set	0	negative	Before: Remove any Defense penalty you have.
+Acrobatic	3	4	-1				t	defense	self	set	0	negative	Before: Remove any Defense penalty you have.
+Deceitful	1	2	-4				F	defense	target	times	2	negative	After: If the target has a Defense penalty, double that penalty.
+Nefarious	2	4	-3				F	defense	target	times	2	negative	After: If the target has a Defense penalty, double that penalty.
+Dastardly	3	6	-2				F	defense	target	times	2	negative	After: If the target has a Defense penalty, double that penalty.
+Cautious	1	-2	0				F	defense	self	plus	1		After: Gain 1 Defense bonus.
+Guarded	2	-1	0				F	defense	self	plus	2		After: Gain 2 Defense bonus.
+Vigilant	3	0	0				F	defense	self	plus	3		After: Gain 3 Defense bonus.
+Angry	1	-4	2				F	offense	self	plus	1		After: Gain 1 Offense bonus.
+Furious	2	-4	3				F	offense	self	plus	2		After: Gain 2 Offense bonus.
+Livid	3	-4	4				F	offense	self	plus	3		After: Gain 3 Offense bonus.
+Gripping	1	-1	-3	grabbing	immobilize	2	t	any	target	set	0		Before: Remove any bonuses or penalties your target has.
+Wrestling	2	0	-2	grabbing	immobilize	3	t	any	target	set	0		Before: Remove any bonuses or penalties your target has.
+Grappling	3	1	-1	grabbing	immobilize	4	t	any	target	set	0		Before: Remove any bonuses or penalties your target has.
+Testing	1	1	-3	gouging			F	defense	target	plus	-1		After: The target takes 1 Defense penalty.
+Probing	2	2	-3	gouging			F	defense	target	plus	-2		After: The target takes 2 Defense penalty.
+Evaluating	3	3	-3	gouging			F	defense	target	plus	-3		After: The target takes 3 Defense penalty.
+Battering	1	-2	0	crushing			F	offense	target	plus	-1		After: The target takes 1 Offense penalty.
+Bashing	2	-2	1	crushing			F	offense	target	plus	-2		After: The target takes 2 Offense penalty.
+Smashing	3	-2	2	crushing			F	offense	target	plus	-3		After: The target takes 3 Offense penalty.
+Leading	1	-2	-2				F	offense	allies	plus	1		After: All other allies gain 1 Offense bonus.
+Inspiring	2	-1	0				F	offense	allies	plus	1		After: All other allies gain 1 Offense bonus.
+Commanding	3	0	2				F	offense	allies	plus	1		After: All other allies gain 1 Offense bonus.
+Protective	1	-3	-1				F	defense	allies	plus	1		After: All other allies gain 1 Defense bonus.
+Shielding	2	-2	1				F	defense	allies	plus	1		After: All other allies gain 1 Defense bonus.
+Fortifying	3	-1	3				F	defense	allies	plus	1		After: All other allies gain 1 Defense bonus.
+Reckless	1	0	2	thrashing			F	defense	self	plus	-1		After: Take 1 Defense penalty.
+Risky	2	0	5	thrashing			F	defense	self	plus	-1		After: Take 1 Defense penalty.
+Perilous	3	0	8	thrashing			F	defense	self	plus	-1		After: Take 1 Defense penalty.
+Taxing	1	1	1				F	offense	self	plus	-1		After: Take 1 Offense penalty.
+Strenuous	2	2	3				F	offense	self	plus	-1		After: Take 1 Offense penalty.
+Exhausting	3	3	5				F	offense	self	plus	-1		After: Take 1 Offense penalty.
+Calm	1	-1	-2				t	offense	self	set	0	negative	Before: Remove any Offense penalty you have.
+Tranquil	2	1	-1				t	offense	self	set	0	negative	Before: Remove any Offense penalty you have.
+Serene	3	3	0				t	offense	self	set	0	negative	Before: Remove any Offense penalty you have.
+Fierce	1	-4	-1	ripping			t	offense	self	times	-1	negative	Before: If you have an Offense penalty, flip it to a bonus.
+Brutal	2	-3	1	ripping			t	offense	self	times	-1	negative	Before: If you have an Offense penalty, flip it to a bonus.
+Savage	3	-2	3	ripping			t	offense	self	times	-1	negative	Before: If you have an Offense penalty, flip it to a bonus.
+Steadfast	1	-3	-2				t	defense	self	times	-1	negative	Before: If you have a Defense penalty, flip it to a bonus.
+Stalwart	2	-2	0				t	defense	self	times	-1	negative	Before: If you have a Defense penalty, flip it to a bonus.
+Resolute	3	-1	2				t	defense	self	times	-1	negative	Before: If you have a Defense penalty, flip it to a bonus.
+Insulting	1	0	-3				t	offense	target	set	0	positive	Before: Remove any Offense bonus your target has.
+Mocking	2	2	-2				t	offense	target	set	0	positive	Before: Remove any Offense bonus your target has.
+Shaming	3	4	-1				t	offense	target	set	0	positive	Before: Remove any Offense bonus your target has.
+Poking	1	-2	-2	piercing	immobilize	1	t	defense	target	set	0	positive	Before: Remove any Defense bonus your target has.
+Skewering	2	-1	-1	piercing	immobilize	2	t	defense	target	set	0	positive	Before: Remove any Defense bonus your target has.
+Impaling	3	0	0	piercing	immobilize	3	t	defense	target	set	0	positive	Before: Remove any Defense bonus your target has.
+Chopping	1	-5	0	hacking			t	defense	target	times	-1	positive	Before: If your target has a Defense bonus, flip it to a penalty.
+Hewing	2	-5	3	hacking			t	defense	target	times	-1	positive	Before: If your target has a Defense bonus, flip it to a penalty.
+Severing	3	-5	6	hacking			t	defense	target	times	-1	positive	Before: If your target has a Defense bonus, flip it to a penalty.
+Dueling	1	-2	-3	slicing			t	offense	target	times	-1	positive	Before: If your target has an Offense bonus, flip it to a penalty.
+Artful	2	0	-2	slicing			t	offense	target	times	-1	positive	Before: If your target has an Offense bonus, flip it to a penalty.
+Elegant	3	2	-1	slicing			t	offense	target	times	-1	positive	Before: If your target has an Offense bonus, flip it to a penalty.
+Curious	1	-1	1	zapping	doom	2	F	defense	self	times	2	negative	After: If you have a Defense penalty, double that penalty.
+Mysterious	2	-1	3	zapping	doom	3	F	defense	self	times	2	negative	After: If you have a Defense penalty, double that penalty.
+Cosmic	3	-1	5	zapping	doom	4	F	defense	self	times	2	negative	After: If you have a Defense penalty, double that penalty.
+Hardening	1	0	-2	morphing	immobilize	4	F	defense	target	plus	1		After: The target gains 1 Defense bonus.
+Solidifying	2	1	-1	morphing	immobilize	5	F	defense	target	plus	1		After: The target gains 1 Defense bonus.
+Petrifying	3	2	0	morphing	immobilize	6	F	defense	target	plus	1		After: The target gains 1 Defense bonus.
+Trembling	1	-3	1	quaking	floored	2	t	offense	every	plus	-1		Before: All characters take 1 Offense penalty.
+Rumbling	2	-3	3	quaking	floored	3	t	offense	every	plus	-1		Before: All characters take 1 Offense penalty.
+Burying	3	-3	5	quaking	floored	4	t	offense	every	plus	-1		Before: All characters take 1 Offense penalty.
+Splashing	1	1	-3	soaking	unhand	2	t	defense	every	plus	-1		Before: All characters take 1 Defense penalty.
+Torrential	2	2	-2	soaking	unhand	3	t	defense	every	plus	-1		Before: All characters take 1 Defense penalty.
+Flooding	3	3	-1	soaking	unhand	4	t	defense	every	plus	-1		Before: All characters take 1 Defense penalty.
+Cruel	1	-2	2	hexing	doom	4	t	defense	party	plus	-1		Before: All allies take 1 Defense penalty.
+Wicked	2	-2	3	hexing	doom	6	t	defense	party	plus	-1		Before: All allies take 1 Defense penalty.
+Diabolical	3	-2	4	hexing	doom	8	t	defense	party	plus	-1		Before: All allies take 1 Defense penalty.
+Nasty	1	0	-2	disgusting	weaken	4	F	defense	target	times	2	positive	After: If the target has a Defense bonus, double that bonus.
+Sickening	2	1	-2	disgusting	weaken	6	F	defense	target	times	2	positive	After: If the target has a Defense bonus, double that bonus.
+Reeking	3	2	-2	disgusting	weaken	8	F	defense	target	times	2	positive	After: If the target has a Defense bonus, double that bonus.
+Chilling	1	1	-1	freezing	immobilize	4	t	offense	party	plus	-1		Before: All allies take 1 Offense penalty.
+Frosty	2	3	-1	freezing	immobilize	5	t	offense	party	plus	-1		Before: All allies take 1 Offense penalty.
+Frigid	3	5	-1	freezing	immobilize	6	t	offense	party	plus	-1		Before: All allies take 1 Offense penalty.
+Searing	1	-1	1	burning	breach	2	F	offense	target	plus	1		After: The target gains 1 Offense bonus.
+Scorching	2	-1	3	burning	breach	3	F	offense	target	plus	1		After: The target gains 1 Offense bonus.
+Incinerating	3	-1	5	burning	breach	4	F	offense	target	plus	1		After: The target gains 1 Offense bonus.
+Disorienting	1	-3	-3	vexing	stun	4	F	offense	target	times	2	negative	After: If the target has an Offense penalty, double that penalty.
+Dazing	2	-2	-2	vexing	stun	5	F	offense	target	times	2	negative	After: If the target has an Offense penalty, double that penalty.
+Knockout	3	-1	-1	vexing	stun	6	F	offense	target	times	2	negative	After: If the target has an Offense penalty, double that penalty.
+Bright	1	3	-4	shining	blind	3	F	offense	self	times	2	negative	After: If you have an Offense penalty, double that penalty.
+Radiant	2	4	-4	shining	blind	5	F	offense	self	times	2	negative	After: If you have an Offense penalty, double that penalty.
+Brilliant	3	5	-4	shining	blind	7	F	offense	self	times	2	negative	After: If you have an Offense penalty, double that penalty.
+Rowdy	1	-3	3	roaring	stun	2	F	offense	target	times	2	positive	After: If the target has an Offense bonus, double that bonus.
+Raucous	2	-3	4	roaring	stun	4	F	offense	target	times	2	positive	After: If the target has an Offense bonus, double that bonus.
+Riotous	3	-3	5	roaring	stun	6	F	offense	target	times	2	positive	After: If the target has an Offense bonus, double that bonus.
