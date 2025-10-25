@@ -11,9 +11,9 @@ Vigilant	3	0	0				F	defense	self	plus	3		After: Gain 3 Defense bonus.
 Angry	1	-4	2				F	offense	self	plus	1		After: Gain 1 Offense bonus.
 Furious	2	-4	3				F	offense	self	plus	2		After: Gain 2 Offense bonus.
 Livid	3	-4	4				F	offense	self	plus	3		After: Gain 3 Offense bonus.
-Gripping	1	-1	-3	grabbing	immobilize	2	t	any	target	set	0		Before: Remove any bonuses or penalties your target has.
-Wrestling	2	0	-2	grabbing	immobilize	3	t	any	target	set	0		Before: Remove any bonuses or penalties your target has.
-Grappling	3	1	-1	grabbing	immobilize	4	t	any	target	set	0		Before: Remove any bonuses or penalties your target has.
+Gripping	1	-1	-3	grabbing	knockdown	2	t	any	target	set	0		Before: Remove any bonuses or penalties your target has.
+Wrestling	2	0	-2	grabbing	knockdown	3	t	any	target	set	0		Before: Remove any bonuses or penalties your target has.
+Grappling	3	1	-1	grabbing	knockdown	4	t	any	target	set	0		Before: Remove any bonuses or penalties your target has.
 Testing	1	1	-3	gouging			F	defense	target	plus	-1		After: The target takes 1 Defense penalty.
 Probing	2	2	-3	gouging			F	defense	target	plus	-2		After: The target takes 2 Defense penalty.
 Evaluating	3	3	-3	gouging			F	defense	target	plus	-3		After: The target takes 3 Defense penalty.
@@ -44,9 +44,9 @@ Resolute	3	-1	2				t	defense	self	times	-1	negative	Before: If you have a Defens
 Insulting	1	0	-3				t	offense	target	set	0	positive	Before: Remove any Offense bonus your target has.
 Mocking	2	2	-2				t	offense	target	set	0	positive	Before: Remove any Offense bonus your target has.
 Shaming	3	4	-1				t	offense	target	set	0	positive	Before: Remove any Offense bonus your target has.
-Poking	1	-2	-2	piercing	immobilize	1	t	defense	target	set	0	positive	Before: Remove any Defense bonus your target has.
-Skewering	2	-1	-1	piercing	immobilize	2	t	defense	target	set	0	positive	Before: Remove any Defense bonus your target has.
-Impaling	3	0	0	piercing	immobilize	3	t	defense	target	set	0	positive	Before: Remove any Defense bonus your target has.
+Poking	1	-2	-2	piercing	breach	1	t	defense	target	set	0	positive	Before: Remove any Defense bonus your target has.
+Skewering	2	-1	-1	piercing	breach	2	t	defense	target	set	0	positive	Before: Remove any Defense bonus your target has.
+Impaling	3	0	0	piercing	breach	3	t	defense	target	set	0	positive	Before: Remove any Defense bonus your target has.
 Chopping	1	-5	0	hacking			t	defense	target	times	-1	positive	Before: If your target has a Defense bonus, flip it to a penalty.
 Hewing	2	-5	3	hacking			t	defense	target	times	-1	positive	Before: If your target has a Defense bonus, flip it to a penalty.
 Severing	3	-5	6	hacking			t	defense	target	times	-1	positive	Before: If your target has a Defense bonus, flip it to a penalty.
@@ -59,12 +59,12 @@ Cosmic	3	-1	5	zapping	doom	4	F	defense	self	times	2	negative	After: If you have 
 Hardening	1	0	-2	morphing	immobilize	4	F	defense	target	plus	1		After: The target gains 1 Defense bonus.
 Solidifying	2	1	-1	morphing	immobilize	5	F	defense	target	plus	1		After: The target gains 1 Defense bonus.
 Petrifying	3	2	0	morphing	immobilize	6	F	defense	target	plus	1		After: The target gains 1 Defense bonus.
-Trembling	1	-3	1	quaking	floored	2	t	offense	every	plus	-1		Before: All characters take 1 Offense penalty.
-Rumbling	2	-3	3	quaking	floored	3	t	offense	every	plus	-1		Before: All characters take 1 Offense penalty.
-Burying	3	-3	5	quaking	floored	4	t	offense	every	plus	-1		Before: All characters take 1 Offense penalty.
-Splashing	1	1	-3	soaking	unhand	2	t	defense	every	plus	-1		Before: All characters take 1 Defense penalty.
-Torrential	2	2	-2	soaking	unhand	3	t	defense	every	plus	-1		Before: All characters take 1 Defense penalty.
-Flooding	3	3	-1	soaking	unhand	4	t	defense	every	plus	-1		Before: All characters take 1 Defense penalty.
+Trembling	1	-3	1	quaking	knockdown	2	t	offense	every	plus	-1		Before: All characters take 1 Offense penalty.
+Rumbling	2	-3	3	quaking	knockdown	3	t	offense	every	plus	-1		Before: All characters take 1 Offense penalty.
+Burying	3	-3	5	quaking	knockdown	4	t	offense	every	plus	-1		Before: All characters take 1 Offense penalty.
+Splashing	1	1	-3	soaking	knockdown	2	t	defense	every	plus	-1		Before: All characters take 1 Defense penalty.
+Torrential	2	2	-2	soaking	knockdown	3	t	defense	every	plus	-1		Before: All characters take 1 Defense penalty.
+Flooding	3	3	-1	soaking	knockdown	4	t	defense	every	plus	-1		Before: All characters take 1 Defense penalty.
 Cruel	1	-2	2	hexing	doom	4	t	defense	party	plus	-1		Before: All allies take 1 Defense penalty.
 Wicked	2	-2	3	hexing	doom	6	t	defense	party	plus	-1		Before: All allies take 1 Defense penalty.
 Diabolical	3	-2	4	hexing	doom	8	t	defense	party	plus	-1		Before: All allies take 1 Defense penalty.

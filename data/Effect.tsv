@@ -3,17 +3,16 @@ acid	dot	15	plant, 25	physical				heal	Deals VALUE biological DOT at the end of 
 bleed	dot	25	fortified, -15	biological				heal	Deals VALUE biological DOT at the end of every round. Removed by any healing. Against fortified, -15 VALUE.
 burn	damage	25	protected|fortified, 15, plant, 25	energy					Deals VALUE energy damage. Against protected or fortified, +15 VALUE. Against plant, +25 VALUE
 cleanse	aid	5		spiritual			heal, medicine, antivenom, purity		Heals VALUE. Delivers 'medicine', 'antivenom', and 'purity'.
-curse	iot	3		spiritual			@unhand	purity	VALUE% chance at the end of every round to inflict 'unhand' ailment.
+curse	iot	3		spiritual			@stun	purity	VALUE% chance at the end of every round to inflict 'stun'.
 deflect	defense	10		physical	ranged		miss, block		VALUE% of ranged attacks against the user miss by blocking.
-disarm	inflict	9		physical	~miss		@unhand		VALUE% of attacks that hit inflict 'unhand' ailment.
-disease	iot	4		biological			@weaken	medicine	VALUE% chance at the end of every round to inflict 'weaken' ailment. Removed by 'medicine'.
-feint	inflict	18		mental	miss		@stun		VALUE% of attacks made that missed inflict 'stun' ailment.
+disease	iot	4		biological			@weaken	medicine	VALUE% chance at the end of every round to inflict 'weaken'. Removed by 'medicine'.
+feint	inflict	18		mental	miss		@stun		VALUE% of attacks made that missed inflict 'stun'.
 freeze	damage	50	unarmored, 30, protected|fortified, -30	energy					Deals VALUE energy damage. Against unarmored, +30 VALUE. Against protected or fortified, -30 VALUE.
 hack	damage	35	protected, 15	physical					Deals VALUE physical damage. Against protected, +15 VALUE.
 lash	damage	40	unarmored, 30, protected|fortified, -15	physical					Deals VALUE physical damage. Against unarmored, +30 VALUE. Against protected or fortified, -15 VALUE.
 nurse	aid	25		biological			heal, medicine, antivenom		Heals VALUE. Delivers 'medicine' and 'antivenom'.
 parry	defense	10		physical	melee		miss, block		VALUE% of melee attacks against the user miss by blocking.
-penetrate	inflict	7	fortified, 6	physical	~miss		@breach		VALUE% of attacks that hit inflict 'breach' ailment. Against fortified, +6 VALUE.
+penetrate	inflict	7	fortified, 6	physical	~miss		@breach		VALUE% of attacks that hit inflict 'breach'. Against fortified, +6 VALUE.
 pierce	damage	35	unarmored, 15	physical					Deals VALUE physical damage. Against unarmored, +15 VALUE.
 poison	dot	15		biological				medicine	Deals VALUE biological DOT at the end of every round. Removed by 'medicine'.
 precision	offense	15		physical	miss	miss			VALUE% of attacks made that missed instead hit.
@@ -23,7 +22,7 @@ shock	damage	20	fortified, 30, machine, 50	energy					Deals VALUE energy damage.
 slam	damage	20	protected|fortified, 30	physical					Deals VALUE physical damage. Against protected or fortified, +30 VALUE.
 slash	damage	40	unarmored, 15, fortified, -15	physical					Deals VALUE physical damage. Against unarmored, +15 VALUE. Against fortified, -15 VALUE.
 slay	damage	65	undead|machine, -65, plant, 5	energy					Deals VALUE energy damage. Against plant, +5 VALUE. Against undead or fiend, -65 VALUE.
-trip	inflict	9		physical	~miss		@floored		VALUE% of attacks that hit inflict 'floored' ailment.
+trip	inflict	9		physical	~miss		@knockdown		VALUE% of attacks that hit inflict 'knockdown'.
 venom	dot	10		biological				antivenom	Deals VALUE biological DOT at the end of every round.
 weight	offense	30		physical	miss&block	miss			VALUE% of attacks made that missed by blocking instead hit.
-wither	iot	3		spiritual			@weaken	purity	VALUE% chance at the end of every round to inflict 'weaken' ailment.
+wither	iot	3		spiritual			@weaken	purity	VALUE% chance at the end of every round to inflict 'weaken'.
