@@ -20,6 +20,12 @@ Evaluating	3	3	-3	gouging			F	defense	target	plus	-3		After: The target takes 3 
 Battering	1	-2	0	crushing			F	offense	target	plus	-1		After: The target takes 1 Offense penalty.
 Bashing	2	-2	1	crushing			F	offense	target	plus	-2		After: The target takes 2 Offense penalty.
 Smashing	3	-2	2	crushing			F	offense	target	plus	-3		After: The target takes 3 Offense penalty.
+Scary	1	-3	-1				F	offense	enemies	plus	-1		After: All enemies take 1 Offense penalty.
+Frightening	2	-2	1				F	offense	enemies	plus	-1		After: All enemies take 1 Offense penalty.
+Terrifying	3	-1	3				F	offense	enemies	plus	-1		After: All enemies take 1 Offense penalty.
+Quirky	1	-1	-3				F	defense	enemies	plus	-1		After: All enemies take 1 Defense penalty.
+Comical	2	1	-2				F	defense	enemies	plus	-1		After: All enemies take 1 Defense penalty.
+Hilarious	3	3	-1				F	defense	enemies	plus	-1		After: All enemies take 1 Defense penalty.
 Leading	1	-2	-2				F	offense	allies	plus	1		After: All other allies gain 1 Offense bonus.
 Inspiring	2	-1	0				F	offense	allies	plus	1		After: All other allies gain 1 Offense bonus.
 Commanding	3	0	2				F	offense	allies	plus	1		After: All other allies gain 1 Offense bonus.
