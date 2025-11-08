@@ -2,7 +2,7 @@ name:s^	operation:s	valueMul:i	valueAdd:j{, }i	type:s	listensFor:j	succRemove:s[
 acid	dot	15	plant, 25	physical				heal	Deals VALUE biological DOT at the end of every round. Removed by any healing. Against plant, +25 VALUE.
 bleed	dot	25	fortified, -15	biological				heal	Deals VALUE biological DOT at the end of every round. Removed by any healing. Against fortified, -15 VALUE.
 burn	damage	25	protected|fortified, 15, plant, 25	energy					Deals VALUE energy damage. Against protected or fortified, +15 VALUE. Against plant, +25 VALUE
-cleanse	aid	5		spiritual			heal, medicine, antivenom, purity		Heals VALUE. Delivers 'medicine', 'antivenom', and 'purity'.
+cleanse	aid	20		spiritual			heal, medicine, antivenom, purity		Heals VALUE. Delivers 'medicine', 'antivenom', and 'purity'.
 curse	iot	3		spiritual			@stun	purity	VALUE% chance at the end of every round to inflict 'stun'.
 deflect	defense	10		physical	ranged		miss, block		VALUE% of ranged attacks against the user miss by blocking.
 disease	iot	4		biological			@weaken	medicine	VALUE% chance at the end of every round to inflict 'weaken'. Removed by 'medicine'.
@@ -18,6 +18,8 @@ poison	dot	15		biological				medicine	Deals VALUE biological DOT at the end of e
 precision	offense	15		physical	miss	miss			VALUE% of attacks made that missed instead hit.
 punish	damage	10	undead|fiend, 75	energy					Deals VALUE energy damage. Against undead or fiend, +75 VALUE.
 reach	offense	30		physical	melee&counter		miss		VALUE% of melee counterattacks against the user miss.
+repair	aid	5	machine, 75, fortified, 45	physical			heal		Heals VALUE. For fortified, +45 VALUE. For machine, +75 VALUE.
+restore	aid	45	undead|machine, -30	spiritual			heal		Heals VALUE. For undead or machine, -30 VALUE.
 shock	damage	20	fortified, 30, machine, 50	energy					Deals VALUE energy damage. Against fortified, +45 VALUE. Against machine, +25 VALUE.
 slam	damage	20	protected|fortified, 30	physical					Deals VALUE physical damage. Against protected or fortified, +30 VALUE.
 slash	damage	40	unarmored, 15, fortified, -15	physical					Deals VALUE physical damage. Against unarmored, +15 VALUE. Against fortified, -15 VALUE.
@@ -26,3 +28,4 @@ trip	inflict	9		physical	~miss		@knockdown		VALUE% of attacks that hit inflict '
 venom	dot	10		biological				antivenom	Deals VALUE biological DOT at the end of every round.
 weight	offense	30		physical	miss&block	miss			VALUE% of attacks made that missed by blocking instead hit.
 wither	iot	3		spiritual			@weaken	purity	VALUE% chance at the end of every round to inflict 'weaken'.
+zombify	aid	0	undead, 175	spiritual			heal, purity		Heals VALUE. Delivers 'purity'. For undead +175 VALUE.
