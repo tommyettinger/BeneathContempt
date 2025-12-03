@@ -6,6 +6,7 @@ cleanse	aid	20		spiritual			heal, medicine, antivenom, purity		Heals VALUE. Deli
 curse	iot	3		spiritual			@stun	purity	VALUE% chance at the end of every round to inflict 'stun'.
 deflect	defense	10		physical	ranged		miss, block		VALUE% of ranged attacks against the user miss by blocking.
 disease	iot	4		biological			@weaken	medicine	VALUE% chance at the end of every round to inflict 'weaken'. Removed by 'medicine'.
+dodge	defense	4		physical			miss		VALUE% of attacks against the user miss.
 feint	inflict	18		mental	miss		@stun		VALUE% of attacks made that missed inflict 'stun'.
 freeze	damage	50	unarmored, 30, protected|fortified, -30	energy					Deals VALUE energy damage. Against unarmored, +30 VALUE. Against protected or fortified, -30 VALUE.
 hack	damage	35	protected, 15	physical					Deals VALUE physical damage. Against protected, +15 VALUE.
@@ -17,7 +18,7 @@ pierce	damage	35	unarmored, 15	physical					Deals VALUE physical damage. Against
 poison	dot	15		biological				medicine	Deals VALUE biological DOT at the end of every round. Removed by 'medicine'.
 precision	offense	15		physical	miss	miss			VALUE% of attacks made that missed instead hit.
 punish	damage	10	undead|fiend, 75	energy					Deals VALUE energy damage. Against undead or fiend, +75 VALUE.
-reach	offense	30		physical	melee&counter		miss		VALUE% of melee counterattacks against the user miss.
+reach	defense	30		physical	melee&counter		miss		VALUE% of melee counterattacks against the user miss.
 repair	aid	5	machine, 75, fortified, 45	physical			heal		Heals VALUE. For fortified, +45 VALUE. For machine, +75 VALUE.
 restore	aid	45	undead|machine, -30	spiritual			heal		Heals VALUE. For undead or machine, -30 VALUE.
 shock	damage	20	fortified, 30, machine, 50	energy					Deals VALUE energy damage. Against fortified, +45 VALUE. Against machine, +25 VALUE.
