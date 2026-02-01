@@ -36,7 +36,7 @@ public class Lwjgl3Launcher {
         //// This should improve compatibility with Windows machines with buggy OpenGL drivers, Macs
         //// with Apple Silicon that have to emulate compatibility with OpenGL anyway, and more.
         //// This uses the dependency `com.badlogicgames.gdx:gdx-lwjgl3-angle` to function.
-        configuration.setOpenGLEmulation(Lwjgl3ApplicationConfiguration.GLEmulation.ANGLE_GLES20, 0, 0);
+//        configuration.setOpenGLEmulation(Lwjgl3ApplicationConfiguration.GLEmulation.ANGLE_GLES20, 0, 0);
 
         return configuration;
     }
