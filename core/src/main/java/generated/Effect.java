@@ -1,6 +1,6 @@
 // Generated code produced by taboratory.
 // This is here to generate an import statement for PartialParser .
-// This is here to generate an import statement for Junction .
+// This is here to generate an import statement for StringJunction .
 // This is here to generate an import statement for Hasher .
 // This is here to generate an import statement for IntList .
 // This is here to generate an import statement for LongList .
@@ -19,11 +19,11 @@ import com.github.tommyettinger.ds.CharList;
 import com.github.tommyettinger.ds.DoubleList;
 import com.github.tommyettinger.ds.FloatList;
 import com.github.tommyettinger.ds.IntList;
-import com.github.tommyettinger.ds.Junction;
 import com.github.tommyettinger.ds.LongList;
 import com.github.tommyettinger.ds.ObjectIntOrderedMap;
 import com.github.tommyettinger.ds.ObjectList;
 import com.github.tommyettinger.ds.ObjectObjectOrderedMap;
+import com.github.tommyettinger.ds.StringJunction;
 import com.github.tommyettinger.ds.support.util.PartialParser;
 import java.util.Arrays;
 import java.util.List;
@@ -46,17 +46,17 @@ public class Effect {
 
   public int valueMul;
 
-  public ObjectIntOrderedMap<Junction<String>> valueAdd;
+  public ObjectIntOrderedMap<StringJunction> valueAdd;
 
   public String type;
 
-  public Junction<String> listensFor;
+  public StringJunction listensFor;
 
   public ObjectList<String> succRemove;
 
   public ObjectList<String> succPut;
 
-  public Junction<String> removedBy;
+  public StringJunction removedBy;
 
   public String description;
 
@@ -67,8 +67,8 @@ public class Effect {
   }
 
   public Effect(String name, String operation, int valueMul,
-      ObjectIntOrderedMap<Junction<String>> valueAdd, String type, Junction<String> listensFor,
-      ObjectList<String> succRemove, ObjectList<String> succPut, Junction<String> removedBy,
+      ObjectIntOrderedMap<StringJunction> valueAdd, String type, StringJunction listensFor,
+      ObjectList<String> succRemove, ObjectList<String> succPut, StringJunction removedBy,
       String description, long __code) {
     this.name = name;
     this.operation = operation;
@@ -87,12 +87,12 @@ public class Effect {
     this.name = fields[0];
     this.operation = fields[1];
     this.valueMul = Base.BASE10.readInt(fields[2]);
-    this.valueAdd = ObjectIntOrderedMap.parse(fields[3], ", ", ", ", PartialParser.DEFAULT_JUNCTION_STRING);
+    this.valueAdd = ObjectIntOrderedMap.parse(fields[3], ", ", ", ", StringJunction::parse);
     this.type = fields[4];
-    this.listensFor = Junction.parse(fields[5]);
+    this.listensFor = StringJunction.parse(fields[5]);
     this.succRemove = ObjectList.parse(fields[6], ", ", PartialParser.DEFAULT_STRING);
     this.succPut = ObjectList.parse(fields[7], ", ", PartialParser.DEFAULT_STRING);
-    this.removedBy = Junction.parse(fields[8]);
+    this.removedBy = StringJunction.parse(fields[8]);
     this.description = fields[9];
     this.__code = Hasher.stringArrayHashBulk64.hash64(11111111L, fields);
   }

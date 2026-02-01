@@ -1,6 +1,6 @@
 // Generated code produced by taboratory.
 // This is here to generate an import statement for PartialParser .
-// This is here to generate an import statement for Junction .
+// This is here to generate an import statement for StringJunction .
 // This is here to generate an import statement for Hasher .
 // This is here to generate an import statement for IntList .
 // This is here to generate an import statement for LongList .
@@ -19,10 +19,10 @@ import com.github.tommyettinger.ds.CharList;
 import com.github.tommyettinger.ds.DoubleList;
 import com.github.tommyettinger.ds.FloatList;
 import com.github.tommyettinger.ds.IntList;
-import com.github.tommyettinger.ds.Junction;
 import com.github.tommyettinger.ds.LongList;
 import com.github.tommyettinger.ds.ObjectList;
 import com.github.tommyettinger.ds.ObjectObjectOrderedMap;
+import com.github.tommyettinger.ds.StringJunction;
 import com.github.tommyettinger.ds.support.util.PartialParser;
 import java.util.Arrays;
 import java.util.List;
