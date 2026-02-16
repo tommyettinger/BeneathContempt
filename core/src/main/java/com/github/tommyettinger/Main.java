@@ -119,20 +119,21 @@ public class Main extends ApplicationAdapter {
         font = getMonogramFamily();
         uiViewport = new ScreenViewport();
         stage = new Stage(uiViewport, batch);
-        TypingLabel label = new TypingLabel("The [@i]City of Contempt[@r] has been The Kingdom's waste heap for a century.\n" +
+        TypingLabel label = new TypingLabel("[#]The [@i]City of Contempt[@r] has been The Kingdom's waste heap for a century.\n" +
             "Anything the Queen finds distasteful, the Cardinal sees as heretical, or the King looks at with contempt, goes to Contempt.\n" +
             "So naturally the brave, albeit grimy and rude, adventurers who slew the Ghoul Emperor and deserved praise had to be banished to Contempt.\n" +
             "After all, they couldn't look too good, otherwise the King's Army would look shabby, now wouldn't they?", font);
         label.setWrap(true);
+        label.setAlignment(Align.center);
         Table table = new Table();
         table.setFillParent(true);
-        table.add(label).left().size(640, 480);
+        table.add(label).center().size(630, 480);
         stage.addActor(table);
     }
 
     @Override
     public void render() {
-        ScreenUtils.clear(0.15f, 0.15f, 0.2f, 1f);
+        ScreenUtils.clear(0.2f, 0.12f, 0.02f, 1f);
         uiViewport.apply(false);
         stage.act();
         stage.draw();
@@ -146,6 +147,6 @@ public class Main extends ApplicationAdapter {
 
     @Override
     public void resize(int width, int height) {
-        uiViewport.update(width, height, false);
+        uiViewport.update(width, height, true);
     }
 }
