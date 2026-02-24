@@ -2,6 +2,7 @@ package com.github.tommyettinger;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.utils.Align;
 import com.github.tommyettinger.digital.TextTools;
 import com.github.tommyettinger.textra.TypingLabel;
 
@@ -20,6 +21,7 @@ public class Screenplay {
     public int advance(TypingLabel label){
         if(++index >= texts.length) index = 0;
         label.restart(texts[index]);
+        label.invalidateHierarchy();
         return index;
     }
 }
