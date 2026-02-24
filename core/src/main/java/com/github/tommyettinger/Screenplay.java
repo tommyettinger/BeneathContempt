@@ -15,7 +15,8 @@ public class Screenplay {
     public Screenplay(Main main, String scriptFileName){
         this.main = main;
         this.stage = main.stage;
-        texts = TextTools.split(Gdx.files.internal(scriptFileName).readString("UTF-8"), "\n--\n");
+        String all = Gdx.files.internal(scriptFileName).readString("UTF-8");
+        texts = TextTools.split(all.stripTrailing(), "\n--\n");
     }
 
     public int advance(TypingLabel label){
