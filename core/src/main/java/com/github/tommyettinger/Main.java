@@ -5,8 +5,6 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.scenes.scene2d.Event;
-import com.badlogic.gdx.scenes.scene2d.EventListener;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
@@ -17,7 +15,6 @@ import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.github.tommyettinger.ds.IntObjectMap;
 import com.github.tommyettinger.random.Xoshiro160RoadroxoRandom;
 import com.github.tommyettinger.textra.Font;
-import com.github.tommyettinger.textra.TypingConfig;
 import com.github.tommyettinger.textra.TypingLabel;
 
 /** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
@@ -119,6 +116,23 @@ public class Main extends ApplicationAdapter {
         return family.connected[0].setFamily(family);
     }
 
+    public TypingLabel makeLabel(String text){
+        final TypingLabel label = new TypingLabel(text, font);
+        label.setDefaultToken("[#]{EASE=-0.5;0.25}");
+        label.setWrap(true);
+        stage.addListener(new ClickListener(){
+            @Override
+            public void clicked(InputEvent event, float x, float y) {
+                if(label.hasEnded()) {
+                    // screenplay.advance(label);
+                }
+                else
+                    label.skipToTheEnd();
+            }
+        });
+        return label;
+    }
+
     @Override
     public void create() {
         batch = new SpriteBatch();
@@ -126,23 +140,15 @@ public class Main extends ApplicationAdapter {
         font = getMonogramFamily();
         uiViewport = new ScreenViewport();
         stage = new Stage(uiViewport, batch);
-        TypingLabel label = new TypingLabel("The [@i]City of Contempt[@r] has been The Kingdom's waste heap for a century.\n" +
+        TypingLabel label = makeLabel("The [@i]City of Contempt[@r] has been The Kingdom's waste heap for a century.\n" +
             "{WAIT=0.5}Anything the Queen finds distasteful, the Cardinal sees as heretical, or the King looks at with contempt, goes to Contempt.\n" +
             "{WAIT=0.5}So naturally the brave, albeit grimy and rude, adventurers who slew the Ghoul Emperor and deserved praise had to be banished to Contempt.\n" +
-            "{WAIT=0.5}After all, they couldn't look too good, otherwise the King's Army would look shabby, wouldn't they?", font);
-        label.setDefaultToken("[#]{EASE=-0.5;0.25}");
-        label.setWrap(true);
+            "{WAIT=0.5}After all, they couldn't look too good, otherwise the King's Army would look shabby, wouldn't they?");
         label.setAlignment(Align.center);
         Table table = new Table();
         table.setFillParent(true);
         table.add(label).center().size(630, 480);
         stage.addActor(table);
-        label.addListener(new ClickListener(){
-            @Override
-            public void clicked(InputEvent event, float x, float y) {
-                label.skipToTheEnd();
-            }
-        });
         Gdx.input.setInputProcessor(stage);
     }
 
