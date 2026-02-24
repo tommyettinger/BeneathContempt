@@ -37,6 +37,8 @@ public class Main extends ApplicationAdapter {
 
     public Stage stage;
 
+    public Screenplay screenplay;
+
     /**
      * Returns a Font configured to use a small variable-width bitmap font with extensive coverage of European scripts,
      * <a href="https://datagoblin.itch.io/monogram">Monogram</a>. Monogram has good coverage of Unicode, including all
@@ -124,7 +126,7 @@ public class Main extends ApplicationAdapter {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 if(label.hasEnded()) {
-                    // screenplay.advance(label);
+                    screenplay.advance(label);
                 }
                 else
                     label.skipToTheEnd();
@@ -140,10 +142,8 @@ public class Main extends ApplicationAdapter {
         font = getMonogramFamily();
         uiViewport = new ScreenViewport();
         stage = new Stage(uiViewport, batch);
-        TypingLabel label = makeLabel("The [@i]City of Contempt[@r] has been The Kingdom's waste heap for a century.\n" +
-            "{WAIT=0.5}Anything the Queen finds distasteful, the Cardinal sees as heretical, or the King looks at with contempt, goes to Contempt.\n" +
-            "{WAIT=0.5}So naturally the brave, albeit grimy and rude, adventurers who slew the Ghoul Emperor and deserved praise had to be banished to Contempt.\n" +
-            "{WAIT=0.5}After all, they couldn't look too good, otherwise the King's Army would look shabby, wouldn't they?");
+        screenplay = new Screenplay(this, "text/intro.txt");
+        TypingLabel label = makeLabel(screenplay.texts[screenplay.index]);
         label.setAlignment(Align.center);
         Table table = new Table();
         table.setFillParent(true);

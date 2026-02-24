@@ -1,0 +1,7 @@
+The [@i]City of Contempt[@r] has been The Kingdom's waste heap for a century.
+{WAIT=0.5}Anything the Queen finds distasteful, the Cardinal sees as heretical, or the King looks at with contempt, goes to Contempt.
+{WAIT=0.5}So naturally the brave, albeit grimy and rude, adventurers who slew the Ghoul Emperor and deserved praise had to be banished to Contempt.
+{WAIT=0.5}After all, they couldn't look too good, otherwise the King's Army would look shabby, wouldn't they?
+--
+{EMERGE}[%400]Beneath{ENDEMERGE}{WAIT=0.5}
+{SLIDE}Contempt{ENDSLIDE}
