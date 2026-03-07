@@ -154,7 +154,7 @@ public class Main extends ApplicationAdapter {
 
     @Override
     public void render() {
-        ScreenUtils.clear(0.2f, 0.12f, 0.02f, 1f);
+        ScreenUtils.clear(0.75f, 0.55f, 0.3f, 1f);
         uiViewport.apply(false);
         stage.act();
         stage.draw();
