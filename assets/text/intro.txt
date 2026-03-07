@@ -6,5 +6,5 @@ The [@i]City of Contempt[@r] has been The Kingdom's waste heap for a century.
 {EMERGE}[%400][GOLD]Beneath{ENDEMERGE}{WAIT=0.5}[white]
 {SLAM=0.2;1.0;0.5;0.75}{VAR=FIRE}Contempt{VAR=ENDFIRE}{ENDSLAM}[%]{WAIT=1.2}
 
-{STYLIST=underline bold all}New Game{ENDSTYLIST}
-{STYLIST=underline bold all}Continue{ENDSTYLIST}
+{HIGHLIGHT=white;1;1;0.5;0.55;true}{TRIGGER=new game}New Game{ENDTRIGGER}{ENDHIGHLIGHT}
+{HIGHLIGHT=white;1;1;0.5;0.55;true}{TRIGGER=continue game}Continue{ENDTRIGGER}{ENDHIGHLIGHT}
