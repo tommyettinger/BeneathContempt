@@ -66,9 +66,9 @@ public class Main extends ApplicationAdapter {
         Font f = new Font("monogram.fnt", atlas.findRegion("monogram"), Font.DistanceFieldType.STANDARD, 0, 0, 0, 0, true);
             f
                 .setDescent(-2.5f).setInlineImageMetrics(0f, 2f, -4f, 0.875f).setFancyLinePosition(0f, 3f)
-                .useIntegerPositions(false).setBoldStrength(0.5f).setOutlineStrength(2.5f).setTextureFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Nearest)
-                .setUnderlineMetrics(-0.17f, 0.1f, -0.1f, -0.35f)
-                .setStrikethroughMetrics(-0.17f, 0.18f, -0.1f, -0.2f)
+                .useIntegerPositions(false).setBoldStrength(0.5f).setOutlineStrength(2f).setTextureFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Nearest)
+                .setUnderlineMetrics(-0.5f, 0.1f, 0.1f, -0.35f)
+                .setStrikethroughMetrics(-0.5f, 0.18f, 0.1f, -0.2f)
                 .setName("Monogram")
                 .scale(2);
             return f;
@@ -101,9 +101,9 @@ public class Main extends ApplicationAdapter {
         Font f = new Font("monogram-italic.fnt", atlas.findRegion("monogram-italic"), Font.DistanceFieldType.STANDARD, 0, 0, 0, 0, true);
         f
             .setDescent(-2.5f).setInlineImageMetrics(0f, 2f, -4f, 0.875f).setFancyLinePosition(0f, 3f)
-            .useIntegerPositions(false).setBoldStrength(0.5f).setOutlineStrength(2.5f).setTextureFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Nearest)
-            .setUnderlineMetrics(-0.17f, 0.1f, -0.1f, -0.35f)
-            .setStrikethroughMetrics(-0.17f, 0.18f, -0.1f, -0.2f)
+            .useIntegerPositions(false).setBoldStrength(0.5f).setOutlineStrength(2f).setTextureFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Nearest)
+            .setUnderlineMetrics(-0.5f, 0.1f, 0.1f, -0.35f)
+            .setStrikethroughMetrics(-0.5f, 0.18f, 0.1f, -0.2f)
             .setName("Monogram Italic")
             .scale(2);
         return f;

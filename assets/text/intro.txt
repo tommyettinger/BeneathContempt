@@ -4,4 +4,7 @@ The [@i]City of Contempt[@r] has been The Kingdom's waste heap for a century.
 {WAIT=0.5}After all, they couldn't look too good, otherwise the King's Army would look shabby, wouldn't they?
 --
 {EMERGE}[%400][GOLD]Beneath{ENDEMERGE}{WAIT=0.5}[white]
-{SLAM=0.2;1.0;0.5;0.75}{VAR=FIRE}Contempt{VAR=ENDFIRE}{ENDSLAM}[%100]
+{SLAM=0.2;1.0;0.5;0.75}{VAR=FIRE}Contempt{VAR=ENDFIRE}{ENDSLAM}[%]{WAIT=1.2}
+
+{STYLIST=underline bold all}New Game{ENDSTYLIST}
+{STYLIST=underline bold all}Continue{ENDSTYLIST}
